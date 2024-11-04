@@ -7,7 +7,7 @@ namespace aplicativoHotel
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Views.contratacaoDaHospedagem());
         }
         protected override Window CreateWindow(IActivationState? activationState)
         {
