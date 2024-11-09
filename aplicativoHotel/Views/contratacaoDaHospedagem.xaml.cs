@@ -2,9 +2,16 @@ namespace aplicativoHotel.Views;
 
 public partial class contratacaoDaHospedagem : ContentPage
 {
+	App PropriedadesApp;
+
+
+
 	public contratacaoDaHospedagem()
 	{
 		InitializeComponent();
+		PropriedadesApp = (App)Application.Current;
+
+		pck_quarto.ItemsSource = PropriedadesApp.lista_quartos;
 	}
 
     private void Button_Clicked(object sender, EventArgs e)
