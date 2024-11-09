@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="aplicativoHotel.Views.hospedagemContratada"
              Title="hospedagemContratada"
-             BackgroundColor="{StaticResource Gray100} ">
+             NavigationPage.HasNavigationBar ="False"
+             BackgroundColor="Black">
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
         <Label Text="Suite Super"
                TextColor="{StaticResource Primary}"
