@@ -6,7 +6,8 @@
              NavigationPage.HasNavigationBar ="False"
              BackgroundColor="Black">
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
-        <Label Text="Suite Super"
+        
+        <Label Text="{Binding QuartoSelecionado.Descricao}"
                TextColor="{StaticResource Primary}"
                FontFamily="Kalam"
                FontSize="50"
