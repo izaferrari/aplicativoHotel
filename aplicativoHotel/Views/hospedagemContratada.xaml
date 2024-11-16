@@ -12,15 +12,17 @@
                FontFamily="Kalam"
                FontSize="50"
                HorizontalTextAlignment="Center"/>
+        
         <Frame Margin="10">
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Adultos:"/>
-                    <Label Text="2" TextColor="{StaticResource Primary}"/>
+                    <Label Text="{Binding QntAdultos}" TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
+                
                 <HorizontalStackLayout>
                     <Label Text="Crianças:"/>
-                    <Label Text="1" TextColor="{StaticResource Primary}"/>
+                    <Label Text="{Binding QntCriancas}" TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
         </Frame>
@@ -32,16 +34,16 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out: "/>
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia: "/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="25/06/2020"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/06/2020"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="5"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn}"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut}"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}"/>
             </Grid>
         </Frame>
 
         <Frame Margin="10">
             <HorizontalStackLayout>
                 <Label Text="Valor total: "/>
-                <Label Text=" 750 reais"/>
+                <Label Text="{Binding ValorTotal}"/>
             </HorizontalStackLayout>
         </Frame>
         <Button Text="Voltar" Clicked="Button_Clicked" HorizontalOptions="Center"/>
